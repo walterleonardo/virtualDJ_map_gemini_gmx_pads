@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper device="GMGMX" author="Atomix Productions" version="850" date="2021-11-16">
+	<info>http://www.virtualdj.com/documents/Gemini%20GMX%20-%20VirtualDJ%208%20Operation%20Guide.pdf</info>
+	<map value="CUE" action="cue_stop" />
+	<map value="LED_CUE" action="cue_stop" />
+	<map value="PLAY" action="play_pause" />
+	<map value="LED_PLAY" action="loaded ? play ? on : blink : off" />
+	<map value="SEARCH" action="wheel_mode &apos;search&apos;" />
+	<map value="KEYLOCK" action="key_lock" />
+	<map value="SCRATCH" action="vinyl_mode" />
+	<map value="LOOP_IN" action="loop ? wheel_mode &apos;loop_in,jog&apos; : loop_in" />
+	<map value="LED_LOOP_IN" action="wheel_mode &apos;loop_in&apos; ? blink : loop_in" />
+	<map value="LOOP_OUT" action="loop ? wheel_mode &apos;loop_out,jog&apos; : loop_out" />
+	<map value="LED_LOOP_OUT" action="wheel_mode &apos;loop_out&apos; ? blink : loop_out" />
+	<map value="RELOOP_EXIT" action="reloop_exit &amp; wheel_mode &apos;jog&apos;" />
+	<map value="LOOP_DOUBLE" action="loop_double" />
+	<map value="LOOP_HALF" action="loop_half" />
+	<map value="BPM" action="beat_tap" />
+	<map value="BPM_LOCK" action="sync" />
+	<map value="LED_BPM_LOCK" action="get_beatpos &amp; param_mod 1 &amp; param_smaller 0.25 ? on : off" />
+	<map value="JOG" action="touchwheel" />
+	<map value="JOG_TOUCH" action="touchwheel_touch" />
+	<map value="TIME" action="display_time &quot;remain,elapsed&quot;" />
+	<map value="LED_TIME" action="display_time &apos;remain&apos;" />
+	<map value="AUTO_CUE" action="auto_cue" />
+	<map value="RANGE" action="pitch_range +1" />
+	<map value="REVERSE" action="reverse" />
+	<map value="PITCH" action="pitch" />
+	<map value="REPEAT" action="repeat_song" />
+	<map value="BACK" action="browser_folder" />
+	<map value="SELECT_PUSH" action="browser_enter" />
+	<map value="CROSSFADER" action="crossfader" />
+	<map value="VOLUME" action="volume" />
+	<map value="GAIN" action="gain" />
+	<map value="EQ_HIGH" action="eq_high" />
+	<map value="EQ_MID" action="eq_mid" />
+	<map value="EQ_LOW" action="eq_low" />
+	<map value="FILTER" action="filter" />
+	<map value="BROWSE" action="browser_scroll" />
+	<map value="MASTERVOL" action="master_volume" />
+	<map value="CUEVOL" action="headphone_volume" />
+	<map value="CUEMIX" action="headphone_mix" />
+	<map value="PFL" action="pfl" />
+	<map value="PADSMODE" action="automix" />
+	<map value="PAD1" action="var &apos;padmode&apos; ? loop ? loop 0.125 ? loop 0.125 &amp; wheel_mode &apos;jog&apos; : loop 0.125 : loop 0.125 : pad 1" />
+	<map value="PAD2" action="var &apos;padmode&apos; ? loop ? loop 0.25 ? loop 0.25 &amp; wheel_mode &apos;jog&apos; : loop 0.25 : loop 0.25 : pad 2" />
+	<map value="PAD3" action="var &apos;padmode&apos; ? loop ? loop 0.5 ? loop 0.5 &amp; wheel_mode &apos;jog&apos; : loop 0.5 : loop 0.5 : pad 3" />
+	<map value="PAD4" action="var &apos;padmode&apos; ? loop ? loop 1 ? loop 1 &amp; wheel_mode &apos;jog&apos; : loop 1 : loop 1 : pad 4" />
+	<map value="PAD5" action="var &apos;padmode&apos; ? loop ? loop 2 ? loop 2 &amp; wheel_mode &apos;jog&apos; : loop 2 : loop 2 : pad 5" />
+	<map value="PAD6" action="var &apos;padmode&apos; ? loop ? loop 4 ? loop 4 &amp; wheel_mode &apos;jog&apos; : loop 4 : loop 4 : pad 6" />
+	<map value="PAD7" action="var &apos;padmode&apos; ? loop ? loop 8 ? loop 8 &amp; wheel_mode &apos;jog&apos; : loop 8 : loop 8 : pad 7" />
+	<map value="PAD8" action="var &apos;padmode&apos; ? loop ? loop 16 ? loop 16 &amp; wheel_mode &apos;jog&apos; : loop 16 : loop 16 : pad 8" />
+	<map value="SHIFT_PAD1" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 0.125 : loop off &amp; loop_roll_mode off : delete_cue  1" />
+	<map value="SHIFT_PAD2" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 0.25 : loop off &amp; loop_roll_mode off : delete_cue  2" />
+	<map value="SHIFT_PAD3" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 0.5 : loop off &amp; loop_roll_mode off : delete_cue  3" />
+	<map value="SHIFT_PAD4" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 1 : loop off &amp; loop_roll_mode off : delete_cue  4" />
+	<map value="SHIFT_PAD5" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 2 : loop off &amp; loop_roll_mode off : delete_cue  5" />
+	<map value="SHIFT_PAD6" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 4 : loop off &amp; loop_roll_mode off : delete_cue  6" />
+	<map value="SHIFT_PAD7" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 8 : loop off &amp; loop_roll_mode off : delete_cue  7" />
+	<map value="SHIFT_PAD8" action="var &apos;padmode&apos; ? down ? loop_roll_mode on &amp; loop 16 : loop off &amp; loop_roll_mode off : delete_cue  8" />
+	<map value="LED_PAD1" action="var &apos;padmode&apos; ? loop 0.125 ? loop_roll_mode ? blink 400ms : on : off : pad 1" />
+	<map value="LED_PAD2" action="var &apos;padmode&apos; ? loop 0.25 ? loop_roll_mode ? blink 400ms : on : off : pad 2" />
+	<map value="LED_PAD3" action="var &apos;padmode&apos; ? loop 0.5 ? loop_roll_mode ? blink 400ms : on : off : pad 3" />
+	<map value="LED_PAD4" action="var &apos;padmode&apos; ? loop 1 ? loop_roll_mode ? blink 400ms : on : off : pad 4" />
+	<map value="LED_PAD5" action="var &apos;padmode&apos; ? loop 2 ? loop_roll_mode ? blink 400ms : on : off : pad 5" />
+	<map value="LED_PAD6" action="var &apos;padmode&apos; ? loop 4 ? loop_roll_mode ? blink 400ms : on : off : pad 6" />
+	<map value="LED_PAD7" action="var &apos;padmode&apos; ? loop 8 ? loop_roll_mode ? blink 400ms : on : off : pad 7" />
+	<map value="LED_PAD8" action="var &apos;padmode&apos; ? loop 16 ? loop_roll_mode ? blink 400ms : on : off  : pad 8" />
+	<map value="VU_MASTER_L" action="var &apos;$vumode&apos; ? get_vu_meter_left : deck left get_level" />
+	<map value="VU_MASTER_R" action="var &apos;$vumode&apos; ? get_vu_meter_right : deck right get_level" />
+	<map value="VU_MODE" action="set &apos;$vumode&apos; 1 while_pressed" />
+	<map value="LCD_BPM" action="get bpm" />
+	<map value="LCD_PITCH" action="get pitch" />
+	<map value="LCD_RANGE" action="pitch_range" />
+	<map value="LCD_SONG_INFO" action="get text &quot;&lt;artist&gt;`get_artist`&lt;title&gt;`get_title`&lt;album&gt;`get_album`&lt;genre&gt;`get_genre`&lt;length&gt;`get_time &apos;total&apos; 75`&lt;index&gt;0&quot;" />
+	<map value="DIGIT_BPM" action="get bpm" />
+	<map value="DIGIT_TEMPO" action="get_pitch_value" />
+	<map value="DIGIT_TIME_CUR" action="get time &apos;elapsed&apos; 75" />
+	<map value="DIGIT_TIME_TOTAL" action="get time &apos;total&apos; 75" />
+	<map value="TEXT_TITLE" action="get title" />
+	<map value="TEXT_ARTIST" action="get artist" />
+	<map value="TEXT_ALBUM" action="get album" />
+	<map value="TEXT_GENRE" action="get genre" />
+</mapper>
